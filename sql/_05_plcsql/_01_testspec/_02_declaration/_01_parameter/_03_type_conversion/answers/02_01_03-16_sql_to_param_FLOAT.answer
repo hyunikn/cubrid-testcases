@@ -370,7 +370,8 @@ t_ENUM_FLOAT. This scenario is a failure.
 
 ===================================================
 Error:-889
-Stored procedure execute error: For input string: "yellow"
+Stored procedure execute error: 
+  invalid FLOAT string: 'yellow'
 
 ===================================================
 0
@@ -418,7 +419,8 @@ t_JSON_FLOAT. This scenario is a failure.
 
 ===================================================
 Error:-889
-Stored procedure execute error: For input string: "{"a":1}"
+Stored procedure execute error: 
+  invalid FLOAT string: '{"a":1}'
 
 ===================================================
 0

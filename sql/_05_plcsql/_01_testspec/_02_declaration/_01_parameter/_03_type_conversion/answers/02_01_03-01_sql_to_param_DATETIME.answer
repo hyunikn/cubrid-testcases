@@ -358,7 +358,8 @@ t_ENUM_DATETIME. This scenario is a failure.
 
 ===================================================
 Error:-889
-Stored procedure execute error: invalid DATETIME string: yellow
+Stored procedure execute error: 
+  invalid DATETIME string: 'yellow'
 
 ===================================================
 0
@@ -406,7 +407,8 @@ t_JSON_DATETIME. This scenario is a failure.
 
 ===================================================
 Error:-889
-Stored procedure execute error: invalid DATETIME string: {"a":1}
+Stored procedure execute error: 
+  invalid DATETIME string: '{"a":1}'
 
 ===================================================
 0
