@@ -11,12 +11,12 @@ insert into plcsql_tbl values(3, 'name3');
 CREATE OR REPLACE PROCEDURE t(param varchar)
 AS
      r_id integer ;
-     r_name string ;
+     r_len integer ;
 BEGIN
     EXECUTE IMMEDIATE 'insert into plcsql_tbl ( id, name ) values ( ?, ? ) ' USING 5, param||'파라미터 + 한글 바인딩 테스트' ;
-    EXECUTE IMMEDIATE 'select id, name from plcsql_tbl where id =?' USING 5 INTO r_id, r_name;
-    put_line('id: ' || r_id || ' name: ' || r_name);
-    
+    EXECUTE IMMEDIATE 'select id, length(name) from plcsql_tbl where id =?' USING 5 INTO r_id, r_len;
+    put_line('id: ' || r_id || ' length(name): ' || r_len);
+
 END;
 
 call t('name1');
