@@ -389,8 +389,8 @@ t_ENUM_VARCHAR. This scenario is a failure.
 1
 
 ===================================================
-Error:-1339
-Unsupported argument type of stored procedure: enum
+Error:-889
+Stored procedure execute error: Unsupported argument type of stored procedure: enum
 
 ===================================================
 0
